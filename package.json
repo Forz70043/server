@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Forz70043/server/issues"
   },
-  "homepage": "https://github.com/Forz70043/server#readme"
+  "homepage": "https://github.com/Forz70043/server#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
