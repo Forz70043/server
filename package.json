@@ -4,8 +4,8 @@
   "description": "Express Server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "nodemon index.js --verbose"
+    "test": "nodemon index.js --verbose",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
