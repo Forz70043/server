@@ -1,8 +1,7 @@
 
-const express = require('express');
+const app = require('./express');
 require('dotenv').config();
 let db = require('./db');
-const app = express();
 
 async function assertDBConnection() {
 	try {
@@ -21,11 +20,6 @@ async function init()
 	app.listen(process.env.APP_PORT, () => {
 		console.log(`Example server listening on port ${process.env.APP_PORT}`);
   	});
-
-
-	app.get('/', (req, res) => {
-		res.send('Hello World!');
-	});
 }
 
 init();
