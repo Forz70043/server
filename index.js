@@ -16,7 +16,7 @@ async function assertDBConnection() {
 
 async function init() 
 {
-	await this.assertDBConnection();
+	await assertDBConnection();
 
 	app.listen(process.env.APP_PORT, () => {
 		console.log(`Example server listening on port ${process.env.APP_PORT}`);
@@ -27,3 +27,5 @@ async function init()
 		res.send('Hello World!');
 	});
 }
+
+init();
