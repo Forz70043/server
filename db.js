@@ -8,12 +8,15 @@ const sequelize = new Sequelize(
     {
         host: process.env.DB_HOST,
         dialect: 'mysql',
+        logQueryParameters: true,
     }
 );
 
-const modelDefiners = [];
+const modelDefiners = [
+    require('./models/user.model')
+];
 
-for(let modelDefiner of modelDefiners) {
+for(const modelDefiner of modelDefiners) {
     modelDefiner(sequelize);
 }
 
